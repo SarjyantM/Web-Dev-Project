@@ -3,35 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Portfolio</title>
+    <title>Resume | Sarjyant Maharjan</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Portfolio</div>
+            <div class="logo">Sarjyant</div>
+            <div class="time-container">
+                <div class="time-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="label">Nepal</span>
+                    <span class="time" id="nepalTime">--:--:--</span>
+                </div>
+                <div class="time-box">
+                    <i class="fas fa-globe"></i>
+                    <span class="label">Local</span>
+                    <span class="time" id="localTime">--:--:--</span>
+                </div>
+            </div>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="./resume.html">Resume</a></li>
-                <li><a href="./clocks.html">Clocks</a></li>
+                <li><a href="./resume.html" class="active">Resume</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
+            <div class="menu-icon" id="menuIcon">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="resume" class="section">
-            <h2>My Resume</h2>
-            <div class="resume-container">
-                <img src="../assets/resume.png" alt="Resume" class="resume-img">
-                <a href="../assets/resume.png" download class="btn">Download Resume</a>
+        <section class="page-header">
+            <h1>My Resume</h1>
+            <div class="header-line"></div>
+        </section>
+
+        <section class="resume-section">
+            <div class="resume-card">
+                <div class="resume-image">
+                    <img src="../assets/resume.png" alt="Resume">
+                    <div class="resume-overlay">
+                        <a href="../assets/resume.png" download class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Sarjyant Maharjan. All rights reserved.</p>
+        <div class="footer-wave"></div>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Sarjyant Maharjan</h3>
+                <p>Creating digital experiences that matter.</p>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="./resume.html">Resume</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sarjyant Maharjan. All rights reserved.</p>
+        </div>
     </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="../js/script.js"></script>
 </body>
