@@ -3,35 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Portfolio</title>
+    <title>Sarjyant Maharjan | Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Portfolio</div>
+            <div class="logo">Sarjyant</div>
+            <div class="time-container">
+                <div class="time-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="label">Nepal</span>
+                    <span class="time" id="nepalTime">--:--:--</span>
+                </div>
+                <div class="time-box">
+                    <i class="fas fa-globe"></i>
+                    <span class="label">Local</span>
+                    <span class="time" id="localTime">--:--:--</span>
+                </div>
+            </div>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="./pages/resume.html">Resume</a></li>
-                <li><a href="./pages/clocks.html">Clocks</a></li>
                 <li><a href="./pages/contact.html">Contact</a></li>
             </ul>
+            <div class="menu-icon" id="menuIcon">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="section">
-            <div class="hero">
-                <h1>Hi, I'm <span>Sarjyant Maharjan</span></h1>
-                <p>Web Developer | Designer | Creator</p>
-                <a href="./pages/contact.html" class="btn">Get In Touch</a>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">👋 Welcome to my portfolio</div>
+                <h1>I'm <span class="highlight">Sarjyant Maharjan</span></h1>
+                <div class="typed-wrapper">
+                    <p>I'm a <span id="typedText"></span><span class="cursor">|</span></p>
+                </div>
+                <p class="hero-desc">Passionate web developer creating beautiful and functional websites.</p>
+                <div class="hero-buttons">
+                    <a href="./pages/contact.html" class="btn btn-primary">Get In Touch <i class="fas fa-arrow-right"></i></a>
+                    <a href="./pages/resume.html" class="btn btn-outline">View Resume <i class="fas fa-file-alt"></i></a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/SarjyantM"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sarjyant-maharjan/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/notsarjyant/"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Sarjyant Maharjan. All rights reserved.</p>
+        <div class="footer-wave"></div>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Sarjyant Maharjan</h3>
+                <p>Creating digital experiences that matter.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="./pages/resume.html">Resume</a>
+                <a href="./pages/contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/SarjyantM"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sarjyant-maharjan/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sarjyant Maharjan. All rights reserved.</p>
+        </div>
     </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="./js/script.js"></script>
 </body>
